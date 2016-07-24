@@ -9,7 +9,7 @@ defmodule Issues.CLI do
   end up generating a table of the last _n_ issues in a github project.
   """
 
-  def run(argv) do
+  def main(argv) do
     argv
     |> parse_args
     |> process
@@ -75,4 +75,5 @@ defmodule Issues.CLI do
     Enum.sort list_of_issues,
       fn(i1, i2) -> i1["created_at"] <= i2["created_at"] end
   end
+
 end
