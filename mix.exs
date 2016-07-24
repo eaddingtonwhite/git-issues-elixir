@@ -17,9 +17,11 @@ defmodule Issues.Mixfile do
 
   defp deps do
     [
-      {:credo, "~> 0.4", only: [:dev, :test]},
-      {:httpoison, "~> 0.8"},
-      {:poison, "~> 1.5"}
+      {:credo,      "~> 0.4", only: [:dev, :test]},
+      {:httpoison,  "~> 0.8"},
+      {:poison,     "~> 1.5"},
+      {:ex_doc,     "~> 0.11"},
+      {:earmark,    ">= 0.0.0"}
     ]
   end
 
